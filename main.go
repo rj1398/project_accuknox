@@ -52,5 +52,6 @@ func main() {
 	fmt.Printf("eBPF program attached. Dropping TCP packets on port %d\n", port)
 	fmt.Println("Press Ctrl+C to stop")
 
-	
+	// Keep the program running
+    	select {}
 }
